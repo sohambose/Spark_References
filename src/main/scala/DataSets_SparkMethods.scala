@@ -140,5 +140,6 @@ object DataSets_SparkMethods extends App {
     .agg(round(sum("amount_spent"), 2)
       .alias("total_spent"))
 
+  //--Show() takes the number of rows to display
   totalByCustomer.show(totalByCustomer.count.toInt)
 }
